@@ -1,0 +1,26 @@
+.meetMyTeamSection{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 5rem;
+}
+.teamMembers{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:2rem;
+}
+.meetMyTeamheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .teamMembers{
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+    }
+}

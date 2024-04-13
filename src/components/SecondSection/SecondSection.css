@@ -1,0 +1,143 @@
+.second-section{
+    background-image: url('../../assets/landingpage-assets/orangeBackground.png');
+    height: 100%;
+    width: 100vw;
+    margin-top: -3rem;   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:  center;
+    padding: 5rem;
+}
+.sparkleImages{
+    position: absolute;
+}
+.second-sectionHeader{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    gap: 5rem
+}
+.second-sectionImage img{
+   max-width: 552px;
+   width: 100%;
+   height: auto;
+   position: relative;
+   /* top: 4%;
+   left:15% */
+}
+.second-sectionContent{
+    background-image: linear-gradient(48deg, rgb(248, 156, 123) 0%, rgb(255, 217, 165) 62%, rgb(249, 249, 249) 100%);
+    max-width: 478px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding:4rem;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.second-sectionContent h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    width: fit-content;
+}
+.second-sectionContent p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    width: fit-content;
+}
+
+.sparkleImages{
+    display: flex;
+    flex-flow: column;
+    
+    gap: 5rem;
+}
+
+.sparkleImage1 img{
+    position: relative;
+    right:250%;
+}
+.sparkleImage3 img{
+    position: relative;
+    right:1050%;
+}
+
+.sparkleImage2 img{
+    position: relative;
+    bottom: 100%;
+    left:1180%;
+}
+
+ @media screen and (max-width: 1200px){
+  
+    .sparkleImage2 img{
+        position: relative;
+        left:1050%
+    }
+    
+    
+ }
+
+
+
+@media screen and (max-width: 1100px){
+    .second-section{
+        height: 100%;
+    }
+    .second-sectionHeader{
+        flex-flow: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-sectionImage img{
+        max-width: 352px;
+        max-height: 426px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 3rem;   
+       
+     }
+     .second-sectionContent{
+        max-width: 352px;
+        max-height: 308px;
+        padding: 2rem;
+        z-index: 2000;
+     }
+     
+     .sparkleImages{
+        display: flex;
+        flex-flow: column;
+        gap: 5rem;
+    }
+    
+    .sparkleImage1 img{
+        position: relative;
+        top:30%;
+        right:250%;
+    }
+    .sparkleImage3 img{
+        position: relative;
+        bottom: 200%;
+        right:450%;
+    }
+
+    .sparkleImage2 img{
+        position: relative;
+        bottom: 100%;
+        left:350%;
+    }
+
+    
+}
+
+

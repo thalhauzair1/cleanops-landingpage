@@ -1,0 +1,21 @@
+.footerStyle{
+    background-color: #F89C7B;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 1px solid #F89C7B;
+    height: 12vh;
+    padding:10px
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.footerContent img{
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    align-self: center;
+    
+}

@@ -1,0 +1,100 @@
+.introduction{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/landingpage-assets/BG-white.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    z-index: 10000;
+    position: relative;
+}
+
+.introduction_Bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.broomLogo{
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+}
+.contentIntroduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;   
+    position: relative;
+    right: 15%;
+    width: 50%;
+    text-align: left;
+}
+
+.contentIntroduction p{
+    font-size: 23px;
+    margin-bottom: 1rem;
+    font-weight: 200;   
+
+}
+.introduction_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.phoneImagePc{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-position: center;
+}
+.phoneImageMobile{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .broomLogo{
+        bottom:-20%;
+
+    }
+    .broomLogo img{
+        width:200px;
+        height: auto;
+    }
+    .contentIntroduction{
+        right: 0;
+    }
+    .introduction_Bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .introduction{
+        height: 100%;
+    }
+
+    .phoneImagePc{
+        display: none;
+    }
+    .phoneImageMobile{
+        display: block;
+        max-width: 100%;
+    }
+    .contentIntroduction{
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    
+    }
+    .contentIntroduction h1{
+        margin-top: -10rem;
+        font-size: 30px;
+    }
+    .contentIntroduction p{
+        font-size: 17px;
+    }
+   
+   
+    
+}
+
+

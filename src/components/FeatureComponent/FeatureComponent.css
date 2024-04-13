@@ -1,0 +1,32 @@
+.featureComponent{
+    max-width: 330px;
+    max-height: 320px;
+    border:1px solid #F89C7B;
+    border-radius: 50px;
+
+}
+.featureComponent_Content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap:1rem;
+    width: 100%;
+    height: 100%;
+}
+.featureComponent_Content p{
+    text-align: left;
+    width: fit-content;
+}
+.featureComponent_icon img{
+   width: 100px;
+    height: 100px;
+}
+.featureComponent_Bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

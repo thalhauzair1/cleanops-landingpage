@@ -1,6 +1,31 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../src/assets/landingpage-assets/01-Font/Satoshi/Satoshi-Black.ttf");  
+  font-style: bold;
+  font-weight: 900;
+
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../src/assets/landingpage-assets/01-Font/Satoshi/Satoshi-Medium.ttf");  
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url("../src/assets/landingpage-assets/01-Font/Satoshi/Satoshi-Regular.ttf");  
+  font-weight: 200;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi';
+}
 
 .App-logo {
   height: 40vmin;

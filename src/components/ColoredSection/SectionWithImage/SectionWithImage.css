@@ -1,0 +1,59 @@
+.SectionContainerWithImage{
+    margin-top:10rem;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #FECE8C;
+}
+.sectionWithImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.imagesInSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imagesInSection img{
+    width: 228px;
+    height: 472px;
+}
+
+@media screen and (min-width: 768px){
+    .SectionContainerWithImage{
+        width: 90vw;
+        height: 45vh;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #FECE8C;
+    }
+    .sectionWithImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagesInSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:4rem;
+
+    }
+    .imagesInSection img{
+        width: 228px;
+        height: 472px;
+    }
+    
+}
