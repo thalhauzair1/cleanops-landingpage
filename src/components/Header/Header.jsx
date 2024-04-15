@@ -16,6 +16,12 @@ const Header = () => {
         }
     };
 
+    const downloadFile = () => {
+        const anchor = document.createElement('a');
+        anchor.href = "../../assets/download/Cleanops-Proposal.pdf";
+        anchor.download = "Cleanops-Proposal.pdf";
+        anchor.click();      }
+
     return (
         <div className={`header-content ${menuOpen ? 'open' : ''}`}>
             <div className="logo">
@@ -23,11 +29,13 @@ const Header = () => {
             </div>
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#features">Features</a></li>
+                    <li><a href="#featureComponent">Features</a></li>
                     <li><a href="#our-team">Our Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <Button variant="contained" style={{
+                <Button variant="contained" 
+                onClick={downloadFile}
+                style={{
                     backgroundColor: '#F89C7B',
                     color: 'black',
                 }}>Download Proposal</Button>

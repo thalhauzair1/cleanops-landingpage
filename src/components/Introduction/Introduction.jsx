@@ -1,12 +1,19 @@
 import React from "react";
 import "./Introduction.css";
-import introductionLogo from "../../assets/landingpage-assets/02-Header/Logo-Desktop.svg";
+import introductionLogo from "../../assets/loadingIcon.gif";
 import introductionPhoneImage from "../../assets/landingpage-assets/MobileBlurry.png";
 import introductionPhoneImageMobile from "../../assets/landingpage-assets/phoneImageMobile.png";
 import Button from "@mui/material/Button";
 import BroomLogo from "../../assets/landingpage-assets/Decoration/Object-Mop.png"
 
 const Introduction = () => {
+  const downloadFile = () => {
+    window.location.href = "../../assets/download";
+    const anchor = document.createElement('a');
+    anchor.href = "../../assets/download/";
+    anchor.download = "Cleanops-Presentation.pdf";
+    anchor.click();  
+  };
   return (
     <div className="introduction">
       <div className="introduction_Content">
@@ -24,7 +31,9 @@ const Introduction = () => {
               Say goodbye to the hassle of traditional paperwork and welcome the
               era of digital housekeeping.
             </p>
-            <Button variant="outlined" style={{
+            <Button variant="outlined"
+            onClick={downloadFile}
+            style={{
               backgroundColor: "white",
               border: '1px solid #F89C7B',
               borderWidth:'2px',

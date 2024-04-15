@@ -19,14 +19,14 @@ const JessicaProfile = () => {
           <h4>Product Designer</h4>
           <div className="social-icons">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/jessicaruizbc/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} color="#0077B5" /> {/* Use the imported faLinkedin icon */}
             </a>
             <a
-              href="https://www.behance.net/"
+              href="https://www.behance.net/jessicaruiz24"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -10,7 +10,8 @@ const Azim = () => {
     <div className="profileContainer">
       <div className="profileImageContainer">
         <ProfileImage
-          description="Advertising Graphic Designer and Marketing Coordinator with more than 25 years in the Finance field, now in UX / UI Designer role at Clean Ops."
+          description="Culminating 16 years of expertise in software, DevOps, and IT management, specializing in comprehensive solutions. Notably led database design, backend coding, and API security for Cleanops, showcasing versatility and dedication.
+          "
           ProfileImage={jessicaImage}
         />
       </div>

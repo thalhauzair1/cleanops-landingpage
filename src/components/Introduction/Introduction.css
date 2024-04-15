@@ -8,6 +8,10 @@
     z-index: 10000;
     position: relative;
 }
+.introduction_logo img{
+    width: 252x;
+    height: 202px;
+}
 
 .introduction_Bottom{
     display: flex;

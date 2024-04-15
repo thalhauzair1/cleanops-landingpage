@@ -5,6 +5,10 @@ import Button from '@mui/material/Button';
 import image from "../../../assets/landingpage-assets/Mockup-03.png"
 
 const SectionWithImageAndText = () => {
+    const gotoFigma = () => {
+        window.open('https://www.figma.com/file/9bySAqecD164prZsKkXa1Z/For-Submisson?type=design&node-id=451%3A2&mode=design&t=F3GRsLxCcbg5XCrc-1' );
+    }
+
 
     return (
 
@@ -12,7 +16,9 @@ const SectionWithImageAndText = () => {
             <div className="section-with-image-and-text-container">
             <div className="section-with-image-and-text_text">
                     <h2>View Prototype</h2>
-                    <Button variant="contained" style={{
+                    <Button variant="contained" 
+                    onClick={gotoFigma}
+                    style={{
                         backgroundColor: 'white',
                         color: 'black',
                         marginTop: '20px',
