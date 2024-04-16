@@ -1,6 +1,7 @@
 import React from "react";
 import "./SectionWithVideo.css";
 import featureIcon from "../../../assets/landingpage-assets/Decoration/Broom.svg";
+import video from "../../../assets/landingpage-assets/Video/CleanOps_final_video.mp4";
 
 const SectionWithVideo = ({ sectionColor }) => {
   return (
@@ -19,13 +20,10 @@ const SectionWithVideo = ({ sectionColor }) => {
             </p>
           </div>
           <div className="coloredSection_video">
-            <iframe
-              src="https://www.youtube.com/embed/7e90gBu4pas"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <video controls autoplay muted>
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
