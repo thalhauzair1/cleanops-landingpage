@@ -16,8 +16,8 @@ const Azim = () => {
         />
       </div>
       <div className="profileBottom">
-          <h1>Azim</h1>
-          <h4>Product Designer</h4>
+          <h1>Azim Mohammadi</h1>
+          <h4>Back End Developer</h4>
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/"

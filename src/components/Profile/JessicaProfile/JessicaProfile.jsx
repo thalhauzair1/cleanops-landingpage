@@ -15,7 +15,7 @@ const JessicaProfile = () => {
         />
       </div>
       <div className="profileBottom">
-          <h1>Jessica</h1>
+          <h1>Jessica Ruiz</h1>
           <h4>Product Designer</h4>
           <div className="social-icons">
             <a

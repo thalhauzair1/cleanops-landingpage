@@ -15,7 +15,7 @@ const Pujan = () => {
         />
       </div>
       <div className="profileBottom">
-          <h1>Pujan</h1>
+          <h1>Pujan Shakya</h1>
           <h4>Full Stack Developer</h4>
           <div className="social-icons">
             <a
@@ -26,7 +26,7 @@ const Pujan = () => {
               <FontAwesomeIcon icon={faLinkedin} color="#0077B5" /> {/* Use the imported faLinkedin icon */}
             </a>
             <a
-              href="https://www.linkedin.com/in/pujan-shakya/"
+              href="https://github.com/puzannshakya"
               target="_blank"
               rel="noopener noreferrer"
             >

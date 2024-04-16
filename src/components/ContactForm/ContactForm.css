@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 50%;
+  width: 80%;
 }
 .getinTouchImage img{
     width: 80%;
@@ -38,6 +38,11 @@
   .getinTouchSection{
     flex-direction: column;
     gap: 2rem;
+  }
+  .getinTouchImage img{
+    width: 120%;
+    height: auto;
+    margin: 0 auto;
   }
 
 }

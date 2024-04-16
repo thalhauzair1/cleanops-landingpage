@@ -13,6 +13,7 @@
         gap: 3rem;
         flex-direction: column;
         padding: 2rem;
+        margin-top:-5rem;
     }
     .featuresBottomSection{
         margin-top: 10rem;
@@ -26,8 +27,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 4rem;
         flex-direction: column;
+    }
+    .videoSectionInFeature{
+        width: 100vw;
     }
   
     
@@ -42,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 .featuresBottomSection{
     flex-direction: row;

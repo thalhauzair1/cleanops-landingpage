@@ -15,8 +15,8 @@ const Cylvia = () => {
         />
       </div>
       <div className="profileBottom">
-          <h1>Cylvia</h1>
-          <h4>Product Designer</h4>
+          <h1>Cylvia Lian</h1>
+          <h4>Front End Developer</h4>
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/cylvialian/"

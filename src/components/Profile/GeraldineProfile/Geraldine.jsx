@@ -15,7 +15,7 @@ const Geraldine = () => {
         />
       </div>
       <div className="profileBottom">
-          <h1>Geraldine</h1>
+          <h1>Geraldine Succar</h1>
           <h4>Product Designer</h4>
           <div className="social-icons">
             <a

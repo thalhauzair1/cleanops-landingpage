@@ -1,5 +1,4 @@
 .section-with-image-and-text-container{
-    border-radius: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +13,18 @@
 }
 .section-with-image-and-text_image img{
     max-width: 401px;
+    width: 78%;
     max-height: 246px;
     margin-top: -5%;
+}
+
+
+@media screen and (min-width: 600px){
+    .section-with-image-and-text-container{
+    border-radius: 60px;
+    width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px){

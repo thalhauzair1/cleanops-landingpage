@@ -16,6 +16,7 @@
 .coloredSectionContainer{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 
@@ -23,8 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 2px;    
 }
+
 
 .coloredSection_top{
     display: flex;
@@ -46,29 +48,41 @@
     max-width:532.23px;
     height: 300px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .coloredSection_video video{
   
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    align-self: center;
 }
 
 @media screen and (max-width: 768px){
     .coloredSectionWithVideo{
+        max-width: 100%;
         padding: 1rem;
+        border-radius: 0px;
     }
     .coloredSection_Content{
         flex-flow: column;
         gap: 2px;
     
     }
+    
     .coloredSection_top{
         padding: 1rem;
+        gap: 10px;
     }
-    .coloredSection_video iframe{
-        width: 80%;
-        height: 80%;
+    .coloredSection_video video{
+       aspect-ratio: 4/3;
+    }
+    .coloredSection_topHead h1{
+        font-size: 1.6rem;
+    }
+    .coloredSection_topHead p{
+        font-size: 0.9rem;
     }
 }

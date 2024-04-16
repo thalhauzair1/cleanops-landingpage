@@ -76,6 +76,17 @@
     left:1180%;
 }
 
+@media  screen and (max-width: 768px){
+    .second-sectionContent h1{
+        font-size: 1.6rem;
+    }
+    .second-sectionContent p{
+        font-size: 0.9rem;
+    }
+    .second-sectionContent{
+        gap:1rem;
+    }
+}
  @media screen and (max-width: 1200px){
   
     .sparkleImage2 img{
@@ -110,11 +121,12 @@
      .second-sectionContent{
         max-width: 352px;
         max-height: 308px;
-        padding: 2rem;
+        padding: 1.5rem;
         z-index: 2000;
      }
      
      .sparkleImages{
+        
         display: flex;
         flex-flow: column;
         gap: 5rem;
@@ -128,13 +140,13 @@
     .sparkleImage3 img{
         position: relative;
         bottom: 200%;
-        right:450%;
+        right:300%;
     }
 
     .sparkleImage2 img{
         position: relative;
         bottom: 100%;
-        left:350%;
+        left:300%;
     }
 
     
