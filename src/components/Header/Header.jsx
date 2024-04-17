@@ -3,6 +3,8 @@ import "./Header.css";
 import Button from '@mui/material/Button';
 import logo from "../../assets/landingpage-assets/02-Header/Logo-Desktop.svg";
 import { HashLink } from 'react-router-hash-link';
+import proposalPDF from "../../assets/download/Cleanops-Proposal.pdf";
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ const Header = () => {
 
     const downloadFile = () => {
         const anchor = document.createElement('a');
-        anchor.href = "../../assets/download/Cleanops-Proposal.pdf";
+        anchor.href = proposalPDF;
         anchor.download = "Cleanops-Proposal.pdf";
         anchor.click();
     };

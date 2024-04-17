@@ -5,12 +5,13 @@ import introductionPhoneImage from "../../assets/landingpage-assets/MobileBlurry
 import introductionPhoneImageMobile from "../../assets/landingpage-assets/phoneImageMobile.png";
 import Button from "@mui/material/Button";
 import BroomLogo from "../../assets/landingpage-assets/Decoration/Object-Mop.png"
+import presentation from "../../assets/download/Cleanops-Presentation.pdf";
 
 const Introduction = () => {
   const downloadFile = () => {
     window.location.href = "../../assets/download";
     const anchor = document.createElement('a');
-    anchor.href = "../../assets/download/";
+    anchor.href = presentation;
     anchor.download = "Cleanops-Presentation.pdf";
     anchor.click();  
   };
