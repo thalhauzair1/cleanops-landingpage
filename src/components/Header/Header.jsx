@@ -1,8 +1,8 @@
-// Header.js
 import React, { useState } from "react";
 import "./Header.css";
 import Button from '@mui/material/Button';
 import logo from "../../assets/landingpage-assets/02-Header/Logo-Desktop.svg";
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -16,11 +16,17 @@ const Header = () => {
         }
     };
 
+    const handleCloseMenu = () => {
+        setMenuOpen(false); // Close the menu when a link is clicked
+        document.body.classList.remove('open'); // Remove 'open' class from body
+    };
+
     const downloadFile = () => {
         const anchor = document.createElement('a');
         anchor.href = "../../assets/download/Cleanops-Proposal.pdf";
         anchor.download = "Cleanops-Proposal.pdf";
-        anchor.click();      }
+        anchor.click();
+    };
 
     return (
         <div className={`header-content ${menuOpen ? 'open' : ''}`}>
@@ -29,16 +35,20 @@ const Header = () => {
             </div>
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#featureComponent">Features</a></li>
-                    <li><a href="#our-team">Our Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><HashLink smooth to="#feature-Section" onClick={handleCloseMenu}>Features</HashLink></li>
+                    <li><HashLink smooth to="#our-team" onClick={handleCloseMenu}>Our Team</HashLink></li>
+                    <li><HashLink smooth to="#contact" onClick={handleCloseMenu}>Contact</HashLink></li>
                 </ul>
-                <Button variant="contained" 
-                onClick={downloadFile}
-                style={{
-                    backgroundColor: '#F89C7B',
-                    color: 'black',
-                }}>Download Proposal</Button>
+                <Button
+                    variant="contained"
+                    onClick={downloadFile}
+                    style={{
+                        backgroundColor: '#F89C7B',
+                        color: 'black',
+                    }}
+                >
+                    Download Proposal
+                </Button>
             </nav>
             <div className="hamburger-menu" onClick={toggleMenu}>
                 <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
@@ -47,7 +57,6 @@ const Header = () => {
             </div>
         </div>
     );
-    
-}
+};
 
 export default Header;

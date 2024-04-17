@@ -13,7 +13,7 @@ import SectionWithImageAndText from "../ColoredSection/SectionWithImageAndText/S
 
 const FeatureSection = () => {
     return(
-        <div className="featureSection">
+        <div className="featureSection" id="feature-Section">
                <div className="videoSectionInFeature">
                    <SectionWithVideo />
                </div>

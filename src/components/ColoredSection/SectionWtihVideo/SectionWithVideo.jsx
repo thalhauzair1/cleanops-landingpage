@@ -18,7 +18,7 @@ const SectionWithVideo = ({ sectionColor }) => {
             </p>
           </div>
           <div className="coloredSection_video">
-            <video controls autoplay muted>
+            <video controls muted>
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

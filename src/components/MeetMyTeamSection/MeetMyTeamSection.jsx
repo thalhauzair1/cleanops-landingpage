@@ -11,7 +11,7 @@ import SparkleImage from "../../assets/landingpage-assets/Decoration/Vector.png"
 
 const MeetMyTeamSection = () => {
   return (
-    <div className="meetMyTeamSection">
+    <div className="meetMyTeamSection" id="our-team">
       <div className="meetMyTeamheader">
         <img src={SparkleImage} alt="sparkle" />
         <h2>Meet Team Nova</h2>
